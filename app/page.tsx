@@ -1,4 +1,4 @@
-import Section1 from '@/app/ui/sections/section1';
+import Section1 from '@/app/ui/sections/section1/section1';
 
 export default function Home() {
   return (
