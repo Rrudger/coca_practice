@@ -1,11 +1,7 @@
 import '@/app/ui/globals.css';
 import { inter } from '@/app/ui/fonts';
-import { Metadata } from 'next';
+import Header from '@/app/ui/header';
 
-export const metadata: Metadata = {
-  title: 'Coca next.js',
-  description: 'Frontend on next.js',
-};
 
 export default function RootLayout({
   children,
@@ -14,7 +10,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased w-screen flex justify-center`}>
+
+        <div className='flex grow flex-col max-w-7xl'>
+          <Header />
+          <div className="">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
