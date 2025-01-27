@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+//import { usePathname } from 'next/navigation';
 
 const links = [
   { name: 'Home', href: '/home' },
@@ -12,7 +12,7 @@ const links = [
 ];
 
 export default function NavLinks() {
-  const pathname = usePathname();
+  //const pathname = usePathname();
 
   return (
     <div className='md:flex hidden w-[400px] flex-row justify-between items-center'>
