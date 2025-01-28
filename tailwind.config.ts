@@ -74,6 +74,16 @@ export default {
         large: ['16px', '24px'],
         medium: ['14px', '20px'],
         small: ['12px', '16px'],
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '100%' },
+        },
+      },
+      animation: {
+        'slide-in': 'slideIn 0.2s linear',
+        'slide-out': 'slideIn 0.2s reverse linear',
       }
     },
   },
