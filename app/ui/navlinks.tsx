@@ -16,8 +16,8 @@ export default function NavLinks({
   mobile,
   openMenu
 }: {
-  mobile: bool;
-  openMenu: (arg: string) => void;
+  mobile: bool,
+  openMenu: ((arg: string)=>void)
 }) {
   //const pathname = usePathname();
 
