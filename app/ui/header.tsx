@@ -30,7 +30,7 @@ export default function Header() {
         />
       </Link>
       <div className='md:block hidden'>
-        <NavLinks mobile={false} openMenu={openMenu}/>
+        <NavLinks mobile={false} />
       </div>
       <div className='md:hidden flex flex-col justify-center relative'>
         <Bars3BottomRightIcon
