@@ -21,7 +21,7 @@ export default function NavLinks({ mobile, openMenu}: MyComponentProps ) {
   //const pathname = usePathname();
 
   const handleClose = () => {
-    if (mobile === 'open') openMenu('close');
+    if (mobile) openMenu('close');
   }
 
   return (
