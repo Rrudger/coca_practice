@@ -13,7 +13,7 @@ const links = [
 ];
 
 interface MyComponentProps {
-  mobile: bool;
+  mobile: boolean;
   openMenu?(arg: string): void
 }
 
