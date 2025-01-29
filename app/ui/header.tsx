@@ -8,7 +8,14 @@ import { Bars3BottomRightIcon } from '@heroicons/react/24/solid';
 import clsx from 'clsx';
 
 export default function Header() {
-  const [toggleMenu, setToggle] = useState(false);
+  const [menu, openMenu] = useState('initial');
+  const switchMenu = () => {
+    if (menu === 'initial') {
+      openMenu(true)
+    } else {
+      openMenu(!menu);
+    }
+  }
 
   return (
     <div className='flex flex-row justify-between mx-4 my-10'>
@@ -20,26 +27,28 @@ export default function Header() {
           alt="logo Coca"
         />
       </Link>
-      <NavLinks />
+      <div className='md:block hidden'>
+        <NavLinks mobile={false} />
+      </div>
       <div className='md:hidden flex flex-col justify-center relative'>
         <Bars3BottomRightIcon
           className={`
             w-[24px] cursor-pointer self-center
 
             `}
-          onClick={() => setToggle(!toggleMenu)}
+          onClick={switchMenu}
         />
         <div
           className={clsx(
-            `bg-primary-main w-[50px] h-[50px]
-            absolute -bottom-full
-            `,
+            'shadow-xl absolute -bottom-[200px]',
             {
-              'animation-slide-out opacity-0': !toggleMenu,
-              'animate-slide-in opacity-1 right-0': toggleMenu,
+              '-right-[400px]': menu === 'initial',
+              'animate-slide-out -right-[400px]': menu === false,
+              'animate-slide-in right-0': menu === true,
             },
           )}
         >
+          <NavLinks mobile={true} openMenu={openMenu} />
         </div>
       </div>
     </div>

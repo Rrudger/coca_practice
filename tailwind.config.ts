@@ -77,13 +77,19 @@ export default {
       },
       keyframes: {
         slideIn: {
-          '0%': { transform: 'translateX(100%)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '100%' },
+          '0%': { transform: 'translateX(100%)', right: '-400px' },
+          '50%': { trasform: 'translateX(0)', right: '-50px' },
+          '100%': { transform: 'translateX(-50%)', right: '0' },
+        },
+        slideOut: {
+          '0%': { transform: 'translateX(-50%)', right: '0' },
+          '50%': { trasform: 'translateX(0)', right: '-50px' },
+          '100%': { transform: 'translateX(100%)', right: '-400px' },
         },
       },
       animation: {
         'slide-in': 'slideIn 0.2s linear',
-        'slide-out': 'slideIn 0.2s reverse linear',
+        'slide-out': 'slideOut 0.2s linear',
       }
     },
   },
