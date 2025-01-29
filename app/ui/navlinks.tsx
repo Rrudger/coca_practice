@@ -12,8 +12,12 @@ const links = [
   { name: 'Contact Us', href: './contact'},
 ];
 
-export default function NavLinks({ mobile, openMenu }: { mobile: bool }) {
+export default function NavLinks({ mobile, openMenu }: { mobile: bool, openMenu: any }) {
   //const pathname = usePathname();
+
+  const handleClose = () => {
+    if (mobile) openMenu('close');
+  }
 
   return (
     <div className={clsx(
@@ -30,7 +34,7 @@ export default function NavLinks({ mobile, openMenu }: { mobile: bool }) {
             key={link.name}
             href={link.href}
             className='group'
-            onClick={() => openMenu('close')}
+            onClick={handleClose}
           >
             <div className={`relative hover:font-bold
               transition-all ease-in-out before:transition-[width]
