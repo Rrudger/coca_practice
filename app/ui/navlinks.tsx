@@ -14,7 +14,7 @@ const links = [
 
 interface MyComponentProps {
   mobile: bool;
-  openMenu?(): void
+  openMenu?(arg: string): void
 }
 
 export default function NavLinks({ mobile, openMenu}: MyComponentProps ) {
