@@ -10,7 +10,7 @@ import clsx from 'clsx';
 
 export default function Header() {
 
-  const [menu, openMenu] = useState<string>('initial');
+  const [menu, openMenu] = useState<'initial' | 'open' | 'close'>('initial');
   const switchMenu = ():void => {
     if (menu === 'initial') {
       openMenu('open')

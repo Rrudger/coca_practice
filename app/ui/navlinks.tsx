@@ -12,12 +12,16 @@ const links = [
   { name: 'Contact Us', href: './contact'},
 ];
 
+interface Func {
+  (): void
+}
+
 export default function NavLinks({
   mobile,
   openMenu
 }: {
   mobile: bool,
-  openMenu: ((arg: string)=>void)
+  openMenu: Func
 }) {
   //const pathname = usePathname();
 
