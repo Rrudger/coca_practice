@@ -12,17 +12,12 @@ const links = [
   { name: 'Contact Us', href: './contact'},
 ];
 
-interface Func {
-  (): void
+interface MyComponentProps {
+  mobile: bool;
+  openMenu?(): void
 }
 
-export default function NavLinks({
-  mobile,
-  openMenu
-}: {
-  mobile: bool,
-  openMenu: Func
-}) {
+export default function NavLinks({ mobile, openMenu}: MyComponentProps ) {
   //const pathname = usePathname();
 
   const handleClose = () => {
