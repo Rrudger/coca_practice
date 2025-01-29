@@ -30,7 +30,7 @@ export default function NavLinks({ mobile, openMenu }: { mobile: bool }) {
             key={link.name}
             href={link.href}
             className='group'
-            onClick={() => openMenu(false)}
+            onClick={() => openMenu('close')}
           >
             <div className={`relative hover:font-bold
               transition-all ease-in-out before:transition-[width]

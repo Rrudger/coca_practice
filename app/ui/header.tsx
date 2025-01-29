@@ -11,9 +11,9 @@ export default function Header() {
   const [menu, openMenu] = useState('initial');
   const switchMenu = () => {
     if (menu === 'initial') {
-      openMenu(true)
+      openMenu('open')
     } else {
-      openMenu(!menu);
+      openMenu(menu === 'open' ? 'close' : 'open');
     }
   }
 
@@ -43,8 +43,8 @@ export default function Header() {
             'shadow-xl absolute -bottom-[200px]',
             {
               '-right-[400px]': menu === 'initial',
-              'animate-slide-out -right-[400px]': menu === false,
-              'animate-slide-in right-0': menu === true,
+              'animate-slide-out -right-[400px]': menu === 'close',
+              'animate-slide-in right-0': menu === 'open',
             },
           )}
         >
