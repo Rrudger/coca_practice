@@ -12,7 +12,7 @@ const links = [
   { name: 'Contact Us', href: './contact'},
 ];
 
-export default function NavLinks({ mobile, openMenu }: { mobile: bool, openMenu: () => void }) {
+export default function NavLinks({ mobile, openMenu }: { mobile: bool, openMenu: (arg: string) => void }) {
   //const pathname = usePathname();
 
   const handleClose = () => {

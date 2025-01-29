@@ -7,9 +7,11 @@ import Link from 'next/link';
 import { Bars3BottomRightIcon } from '@heroicons/react/24/solid';
 import clsx from 'clsx';
 
+
 export default function Header() {
-  const [menu, openMenu] = useState('initial');
-  const switchMenu = () => {
+
+  const [menu, openMenu] = useState<string>('initial');
+  const switchMenu = ():void => {
     if (menu === 'initial') {
       openMenu('open')
     } else {
