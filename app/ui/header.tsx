@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <div className='flex flex-row justify-between mx-4 my-10'>
-      <Link href={'/'}>
+      <Link href={'/'} className='animate-slide-up'>
         <Image
           src="/logo.png"
           width={140}
@@ -29,7 +29,7 @@ export default function Header() {
           alt="logo Coca"
         />
       </Link>
-      <div className='md:block hidden'>
+      <div className='md:block hidden animate-slide-right delay-500'>
         <NavLinks mobile={false} />
       </div>
       <div className='md:hidden flex flex-col justify-center relative'>
@@ -45,8 +45,8 @@ export default function Header() {
             'shadow-xl absolute -bottom-[200px]',
             {
               '-right-[400px]': menu === 'initial',
-              'animate-slide-out -right-[400px]': menu === 'close',
-              'animate-slide-in right-0': menu === 'open',
+              'animate-slide-out-menu -right-[400px]': menu === 'close',
+              'animate-slide-in-menu right-0': menu === 'open',
             },
           )}
         >

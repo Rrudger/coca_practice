@@ -76,20 +76,52 @@ export default {
         small: ['12px', '16px'],
       },
       keyframes: {
-        slideIn: {
+        slideInMenu: {
           '0%': { transform: 'translateX(100%)', right: '-400px' },
           '50%': { trasform: 'translateX(0)', right: '-50px' },
           '100%': { transform: 'translateX(-50%)', right: '0' },
         },
-        slideOut: {
+        slideOutMenu: {
           '0%': { transform: 'translateX(-50%)', right: '0' },
           '50%': { trasform: 'translateX(0)', right: '-50px' },
           '100%': { transform: 'translateX(100%)', right: '-400px' },
         },
+        slideRight: {
+          '0%': { transform: 'translateX(-150%)', opacity: '0' },
+          '25%': { transform: 'translateX(-100%)', opacity: '0.25' },
+          '50%': { transform: 'translateX(-50%)', opacity: '0.5'},
+          '75%': { transform: 'translateX(-25%)', opacity: '0.75'},
+          '100%': { transform: 'translateX(0)', opacity: '1'},
+        },
+        slideLeft: {
+          '0%': { transform: 'translateX(150%)', opacity: '0' },
+          '25%': { transform: 'translateX(100%)', opacity: '0.25' },
+          '50%': { transform: 'translateX(50%)', opacity: '0.5'},
+          '75%': { transform: 'translateX(25%)', opacity: '0.75'},
+          '100%': { transform: 'translateX(0)', opacity: '1'},
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(150%)', opacity: '0' },
+          '25%': { transform: 'translateY(100%)', opacity: '0.25' },
+          '50%': { transform: 'translateY(50%)', opacity: '0.5'},
+          '75%': { transform: 'translateY(25%)', opacity: '0.75'},
+          '100%': { transform: 'translateY(0)', opacity: '1'},
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-150%)', opacity: '0' },
+          '25%': { transform: 'translateY(-100%)', opacity: '0.25' },
+          '50%': { transform: 'translateY(-50%)', opacity: '0.5'},
+          '75%': { transform: 'translateY(-25%)', opacity: '0.75'},
+          '100%': { transform: 'translateY(0)', opacity: '1'},
+        },
       },
       animation: {
-        'slide-in': 'slideIn 0.2s linear',
-        'slide-out': 'slideOut 0.2s linear',
+        'slide-in-menu': 'slideInMenu 0.3s linear',
+        'slide-out-menu': 'slideOutMenu 0.3s linear',
+        'slide-right': 'slideRight 0.5s linear',
+        'slide-left': 'slideLeft 0.5s linear',
+        'slide-up': 'slideUp 0.5s linear',
+        'slide-down': 'slideDown 0.5s linear',
       }
     },
   },
