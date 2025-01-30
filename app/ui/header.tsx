@@ -10,10 +10,10 @@ import clsx from 'clsx';
 
 export default function Header() {
   useEffect(() => {
-    document.getElementById('logo')!.classList.remove('opacity-0')
+    document.getElementById('logo')!.classList.remove('opacity-0');
     setTimeout(() => {
       document.getElementById('navLinks')!.classList.remove('opacity-0');
-    }, "500");
+    }, 500);
   }, []);
 
   const [menu, openMenu] = useState('initial');
