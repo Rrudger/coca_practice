@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NavLinks from '@/app/ui/navlinks';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +9,12 @@ import clsx from 'clsx';
 
 
 export default function Header() {
+  useEffect(() => {
+    document.getElementById('logo').classList.remove('opacity-0')
+    setTimeout(() => {
+      document.getElementById('navLinks').classList.remove('opacity-0');
+    }, "500");
+  }, []);
 
   const [menu, openMenu] = useState('initial');
   const switchMenu = ():void => {
@@ -21,7 +27,7 @@ export default function Header() {
 
   return (
     <div className='flex flex-row justify-between mx-4 my-10'>
-      <Link href={'/'} className='animate-slide-up'>
+      <Link id='logo' href={'/'} className='opacity-0 animate-slide-up'>
         <Image
           src="/logo.png"
           width={140}
@@ -29,7 +35,10 @@ export default function Header() {
           alt="logo Coca"
         />
       </Link>
-      <div className='md:block hidden animate-slide-right delay-500'>
+      <div
+        id='navLinks'
+        className='md:block opacity-0 hidden animate-[slideRight_linear_0.5s_1_0.5s]'
+      >
         <NavLinks mobile={false} />
       </div>
       <div className='md:hidden flex flex-col justify-center relative'>
