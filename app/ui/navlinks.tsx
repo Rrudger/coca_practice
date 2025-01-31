@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import clsx from 'clsx';
-//import { usePathname } from 'next/navigation';
 
 const links = [
   { name: 'Home', href: '/home' },
@@ -18,8 +17,6 @@ interface MyComponentProps {
 }
 
 export default function NavLinks({ mobile, openMenu}: MyComponentProps ) {
-  //const pathname = usePathname();
-
   const handleClose = () => {
     if (openMenu) openMenu('close');
   }

@@ -10,12 +10,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased w-screen flex justify-center`}>
-
-        <div className='flex grow flex-col max-w-7xl'>
+      <body className={`${inter.className} antialiased text-neutral-100 relative`}>
+        <div className='absolute top-0 z-50 flex justify-center w-screen'>
           <Header />
-          <div className="">{children}</div>
         </div>
+        <div className="flex justify-center w-screen">{children}</div>
       </body>
     </html>
   );

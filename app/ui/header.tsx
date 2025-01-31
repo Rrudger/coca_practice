@@ -10,7 +10,9 @@ import clsx from 'clsx';
 
 export default function Header() {
   useEffect(() => {
-    document.getElementById('logo')!.classList.remove('opacity-0');
+    setTimeout(() => {
+      document.getElementById('logo')!.classList.remove('opacity-0');
+    }, 200);
     setTimeout(() => {
       document.getElementById('navLinks')!.classList.remove('opacity-0');
     }, 500);
@@ -26,7 +28,9 @@ export default function Header() {
   }
 
   return (
-    <div className='flex flex-row justify-between mx-4 my-10'>
+    <div className={`
+      max-w-7xl grow flex flex-row justify-between items-center mx-4 py-10
+      `}>
       <Link id='logo' href={'/'} className='opacity-0 animate-slide-up'>
         <Image
           src="/logo.png"

@@ -1,11 +1,11 @@
+import Screen1 from '@/app/ui/home/screen1';
+import Screen2 from '@/app/ui/home/screen2';
+
 export default function Page() {
   return (
-    <div>
-      <div className={`
-        w-[200px] h-[200px] bg-primary-main
-        
-        `}>
-      </div>
+    <div className=''>
+      <Screen1 />
+      <Screen2 />
     </div>
   );
 };
