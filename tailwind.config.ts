@@ -67,7 +67,7 @@ export default {
         h1: ['80px', '96px'],
         h2: ['48px', '56px'],
         h3: ['40px', '48px'],
-        h4: ['32px', '42px'],
+        h4: ['32px', '40px'],
         h5: ['24px', '32px'],
         h6: ['20px', '26px'],
         large: ['16px', '24px'],
