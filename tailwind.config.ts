@@ -65,10 +65,11 @@ export default {
       },
       fontSize: {
         h1: ['80px', '96px'],
+        h2_5: ['56px', '68px'],
         h2: ['48px', '56px'],
         h3: ['40px', '48px'],
         h4: ['32px', '40px'],
-        h5: ['24px', '32px'],
+        h5: ['24px', '34px'],
         h6: ['20px', '26px'],
         large: ['16px', '24px'],
         medium: ['14px', '20px'],
