@@ -10,11 +10,16 @@ import clsx from 'clsx';
 
 export default function Header() {
   useEffect(() => {
+    const [logo, navLinks] = [
+      document.getElementById('logo')!,
+      document.getElementById('navLinks')!
+    ];
+
+    logo.classList.remove('opacity-0');
+    logo.classList.add('animate-[slideUp_linear_0.5s_1_0s]')
     setTimeout(() => {
-      document.getElementById('logo')!.classList.remove('opacity-0');
-    }, 200);
-    setTimeout(() => {
-      document.getElementById('navLinks')!.classList.remove('opacity-0');
+      navLinks.classList.remove('opacity-0');
+      navLinks.classList.add('animate-[slideRight_linear_0.5s_1_0s]');
     }, 500);
   }, []);
 
@@ -31,7 +36,7 @@ export default function Header() {
     <div className={`
       max-w-7xl grow flex flex-row justify-between items-center mx-4 py-10
       `}>
-      <Link id='logo' href={'/'} className='opacity-0 animate-slide-up'>
+      <Link id='logo' href={'/'} className='opacity-0'>
         <Image
           src="/logo.png"
           width={140}
@@ -41,7 +46,7 @@ export default function Header() {
       </Link>
       <div
         id='navLinks'
-        className='md:block opacity-0 hidden animate-[slideRight_linear_0.5s_1_0.5s]'
+        className='md:block opacity-0 hidden'
       >
         <NavLinks mobile={false} />
       </div>
