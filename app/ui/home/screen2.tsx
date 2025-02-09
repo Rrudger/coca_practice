@@ -10,11 +10,11 @@ import {
 
 export default function Screen2() {
 
-  const handleScroll = () => {
+  const handleScrollScreen1 = () => {
     const top = Math.abs(document.documentElement.getBoundingClientRect().top);
     const viewPortHeight = Math.round(document.documentElement.clientHeight / 2);
     if (top > viewPortHeight) {
-      document.removeEventListener(('scroll'), handleScroll)
+      document.removeEventListener(('scroll'), handleScrollScreen1);
       const [header, headerText, div1, div2, div3, div4] = [
         document.getElementById('screen2header')!,
         document.getElementById('screen2headertext')!,
@@ -49,7 +49,7 @@ export default function Screen2() {
     }
   }
   useEffect(() => {
-    document.addEventListener(('scroll'), handleScroll);
+    document.addEventListener(('scroll'), handleScrollScreen1);
   });
 
   return (
