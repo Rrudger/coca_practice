@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect } from 'react';
 import {
   CalendarDaysIcon,
   ClipboardDocumentCheckIcon,
@@ -8,49 +7,40 @@ import {
   ShieldCheckIcon,
  } from '@heroicons/react/24/outline';
 
-export default function Screen2() {
-
-  const handleScrollScreen1 = () => {
-    const top = Math.abs(document.documentElement.getBoundingClientRect().top);
-    const viewPortHeight = Math.round(document.documentElement.clientHeight / 2);
-    if (top > viewPortHeight) {
-      document.removeEventListener(('scroll'), handleScrollScreen1);
-      const [header, headerText, div1, div2, div3, div4] = [
-        document.getElementById('screen2header')!,
-        document.getElementById('screen2headertext')!,
-        document.getElementById('screen2div1')!,
-        document.getElementById('screen2div2')!,
-        document.getElementById('screen2div3')!,
-        document.getElementById('screen2div4')!,
-      ];
-
-      header.classList.remove('opacity-0');
-      header.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
-      setTimeout(() => {
-        headerText.classList.remove('opacity-0');
-        headerText.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
-      }, 400);
-      setTimeout(() => {
-        div1.classList.remove('opacity-0');
-        div1.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
-      }, 800);
-      setTimeout(() => {
-        div2.classList.remove('opacity-0');
-        div2.classList.add('animate-[slideLeft_linear_0.4s_1_0s]');
-      }, 1200);
-      setTimeout(() => {
-        div3.classList.remove('opacity-0');
-        div3.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
-      }, 1600);
-      setTimeout(() => {
-        div4.classList.remove('opacity-0');
-        div4.classList.add('animate-[slideLeft_linear_0.4s_1_0s]');
-      }, 2000);
-    }
-  }
-  useEffect(() => {
-    document.addEventListener(('scroll'), handleScrollScreen1);
-  });
+export default function Screen2({ animation }: { animation: boolean }) {
+  const launchAnimation = () => {
+    const [header, headerText, div1, div2, div3, div4] = [
+      document.getElementById('screen2header')!,
+      document.getElementById('screen2headertext')!,
+      document.getElementById('screen2div1')!,
+      document.getElementById('screen2div2')!,
+      document.getElementById('screen2div3')!,
+      document.getElementById('screen2div4')!,
+    ];
+    header.classList.remove('opacity-0');
+    header.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
+    setTimeout(() => {
+      headerText.classList.remove('opacity-0');
+      headerText.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
+    }, 400);
+    setTimeout(() => {
+      div1.classList.remove('opacity-0');
+      div1.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
+    }, 800);
+    setTimeout(() => {
+      div2.classList.remove('opacity-0');
+      div2.classList.add('animate-[slideLeft_linear_0.4s_1_0s]');
+    }, 1200);
+    setTimeout(() => {
+      div3.classList.remove('opacity-0');
+      div3.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
+    }, 1600);
+    setTimeout(() => {
+      div4.classList.remove('opacity-0');
+      div4.classList.add('animate-[slideLeft_linear_0.4s_1_0s]');
+    }, 2000);
+  };
+  if(animation) launchAnimation();
 
   return (
     <div

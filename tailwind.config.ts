@@ -116,6 +116,13 @@ export default {
           '75%': { transform: 'translateY(-25%)', opacity: '0.75'},
           '100%': { transform: 'translateY(0)', opacity: '1'},
         },
+        slideDownHalf: {
+          '0%': { transform: 'translateY(-50%)', opacity: '0' },
+          '25%': { transform: 'translateY(-35%)', opacity: '0.25' },
+          '50%': { transform: 'translateY(-25%)', opacity: '0.5'},
+          '75%': { transform: 'translateY(-15%)', opacity: '0.75'},
+          '100%': { transform: 'translateY(0)', opacity: '1'},
+        },
       },
       animation: {
         'slide-in-menu': 'slideInMenu 0.3s linear',

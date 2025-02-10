@@ -1,62 +1,54 @@
 'use client';
 
-import { useEffect } from 'react';
 import Image from 'next/image';
 import {
   CheckCircleIcon,
  } from '@heroicons/react/24/outline';
 
-export default function Screen3() {
-  const handleScrollScreen2 = () => {
-    const top = Math.abs(document.documentElement.getBoundingClientRect().top);
-    const viewPortHeight = document.documentElement.clientHeight;
-    if (top > Math.round(viewPortHeight / 2 + viewPortHeight) ) {
-      document.removeEventListener(('scroll'), handleScrollScreen2);
-      const [image, header, text, list, stat1, stat2, stat3, stat4] = [
-        document.getElementById('s3image')!,
-        document.getElementById('s3header')!,
-        document.getElementById('s3text')!,
-        document.getElementById('s3list')!,
-        document.getElementById('s3stat1')!,
-        document.getElementById('s3stat2')!,
-        document.getElementById('s3stat3')!,
-        document.getElementById('s3stat4')!,
-      ];
-      image.classList.remove('opacity-0');
-      image.classList.add('animate-[slideRight_linear_0.3s_1_0s]');
-      setTimeout(() => {
-        list.classList.remove('opacity-0');
-        list.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
-      }, 300);
-      setTimeout(() => {
-        text.classList.remove('opacity-0');
-        text.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
-      }, 600);
-      setTimeout(() => {
-        header.classList.remove('opacity-0');
-        header.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
-      }, 900);
-      setTimeout(() => {
-        stat1.classList.remove('opacity-0');
-        stat1.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-      }, 1200);
-      setTimeout(() => {
-        stat2.classList.remove('opacity-0');
-        stat2.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-      }, 1300);
-      setTimeout(() => {
-        stat3.classList.remove('opacity-0');
-        stat3.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-      }, 1400);
-      setTimeout(() => {
-        stat4.classList.remove('opacity-0');
-        stat4.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-      }, 1500);
-    }
+export default function Screen3({ animation }: { animation: boolean }) {
+  const launchAnimation = () => {
+    const [image, header, text, list, stat1, stat2, stat3, stat4] = [
+      document.getElementById('s3image')!,
+      document.getElementById('s3header')!,
+      document.getElementById('s3text')!,
+      document.getElementById('s3list')!,
+      document.getElementById('s3stat1')!,
+      document.getElementById('s3stat2')!,
+      document.getElementById('s3stat3')!,
+      document.getElementById('s3stat4')!,
+    ];
+    image.classList.remove('opacity-0');
+    image.classList.add('animate-[slideRight_linear_0.3s_1_0s]');
+    setTimeout(() => {
+      list.classList.remove('opacity-0');
+      list.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
+    }, 300);
+    setTimeout(() => {
+      text.classList.remove('opacity-0');
+      text.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
+    }, 600);
+    setTimeout(() => {
+      header.classList.remove('opacity-0');
+      header.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
+    }, 900);
+    setTimeout(() => {
+      stat1.classList.remove('opacity-0');
+      stat1.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
+    }, 1200);
+    setTimeout(() => {
+      stat2.classList.remove('opacity-0');
+      stat2.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
+    }, 1300);
+    setTimeout(() => {
+      stat3.classList.remove('opacity-0');
+      stat3.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
+    }, 1400);
+    setTimeout(() => {
+      stat4.classList.remove('opacity-0');
+      stat4.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
+    }, 1500);
   };
-  useEffect(() => {
-    document.addEventListener(('scroll'), handleScrollScreen2);
-  });
+  if (animation) launchAnimation();
 
   return (
     <div className='w-screen flex justify-center items-stretch'>
