@@ -74,6 +74,7 @@ export default {
         h6: ['20px', '26px'],
         extralarge: ['18px', '32px'],
         large: ['16px', '24px'],
+        largeplus: ['16px', '26px'],
         medium: ['14px', '20px'],
         small: ['12px', '16px'],
       },

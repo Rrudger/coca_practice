@@ -1,6 +1,7 @@
 import '@/app/ui/globals.css';
 import { inter } from '@/app/ui/fonts';
 import Header from '@/app/ui/header';
+import Footer from '@/app/ui/footer';
 
 
 export default function RootLayout({
@@ -8,7 +9,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
+
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased text-neutral-100 relative`}>
@@ -16,6 +17,7 @@ export default function RootLayout({
           <Header />
         </div>
         <div className="flex justify-center w-screen">{children}</div>
+        <Footer />
       </body>
     </html>
   );
