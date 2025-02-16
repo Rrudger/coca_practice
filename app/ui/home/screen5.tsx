@@ -24,7 +24,7 @@ export default function Screen5({ animation }: { animation: boolean }) {
       document.getElementById('s5div4')!,
     ];
     header.classList.remove('opacity-0');
-    header.classList.add('animate-[slideDownHalf_linear_0.3s_1_0s]');
+    header.classList.add('animate-[slideDownSl_linear_0.3s_1_0s]');
     setTimeout(() => {
       text.classList.remove('opacity-0');
       text.classList.add('animate-[slideUp_linear_0.3s_1_0s]');

@@ -69,7 +69,9 @@ export default {
         h2: ['48px', '56px'],
         h2_5: ['56px', '68px'],
         h3: ['40px', '48px'],
+        h3_5: ['40px', '52px'],
         h4: ['32px', '40px'],
+        h4_5: ['32px', '48px'],
         h5: ['24px', '34px'],
         h6: ['20px', '26px'],
         extralarge: ['18px', '32px'],
@@ -117,12 +119,26 @@ export default {
           '75%': { transform: 'translateY(-25%)', opacity: '0.75'},
           '100%': { transform: 'translateY(0)', opacity: '1'},
         },
-        slideDownHalf: {
+        slideDownSl: {
           '0%': { transform: 'translateY(-50%)', opacity: '0' },
           '25%': { transform: 'translateY(-35%)', opacity: '0.25' },
           '50%': { transform: 'translateY(-25%)', opacity: '0.5'},
           '75%': { transform: 'translateY(-15%)', opacity: '0.75'},
           '100%': { transform: 'translateY(0)', opacity: '1'},
+        },
+        slideRightSl: {
+          '0%': { transform: 'translateX(-50%)', opacity: '0' },
+          '25%': { transform: 'translateX(-35%)', opacity: '0.25' },
+          '50%': { transform: 'translateX(-25%)', opacity: '0.5'},
+          '75%': { transform: 'translateX(-15%)', opacity: '0.75'},
+          '100%': { transform: 'translateX(0)', opacity: '1'},
+        },
+        slideLeftSl: {
+          '0%': { transform: 'translateX(50%)', opacity: '0' },
+          '25%': { transform: 'translateX(35%)', opacity: '0.25' },
+          '50%': { transform: 'translateX(25%)', opacity: '0.5'},
+          '75%': { transform: 'translateX(15%)', opacity: '0.75'},
+          '100%': { transform: 'translateX(0)', opacity: '1'},
         },
       },
       animation: {
