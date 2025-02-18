@@ -1,3 +1,7 @@
 export default function Page() {
-  return <p>Contact page</p>;
+  return (
+    <div className='h-screen'>
+      contacts
+    </div>
+  );
 };

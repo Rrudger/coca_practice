@@ -1,3 +1,7 @@
 export default function Page() {
-  return <p>Blog page</p>;
+  return (
+    <div className='h-screen'>
+      blog
+    </div>
+  );
 };

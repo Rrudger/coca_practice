@@ -19,7 +19,6 @@ export default function Page() {
 
   const handleScroll = () => {
     const viewPortHeight = document.documentElement.clientHeight;
-    console.log(viewPortHeight)
     const top = Math.abs(document.documentElement.getBoundingClientRect().top);
     if (top > Math.round(viewPortHeight / 2)) set2(true);
     if (top > Math.round(viewPortHeight / 2 + viewPortHeight)) set3(true);

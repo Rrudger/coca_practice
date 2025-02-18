@@ -1,3 +1,7 @@
 export default function Page() {
-  return <p>Pricing page</p>;
+  return (
+    <div className='h-screen'>
+      pricing
+    </div>
+  );
 };
