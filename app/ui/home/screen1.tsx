@@ -18,20 +18,18 @@ export default function Screen1() {
       document.getElementById('screen1-r')!,
       document.getElementById('screen1-btns')!
     ];
-    if (right) {
-      setTimeout(() => {
-        right.classList.remove('opacity-0');
-        right.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
-      }, 1000);
-      setTimeout(() => {
-        left.classList.remove('opacity-0');
-        left.classList.add('animate-[slideLeft_linear_0.4s_1_0s]');
-      }, 1400);
-      setTimeout(() => {
-        btns.classList.remove('opacity-0');
-        btns.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
-      }, 1800);
-    }
+    setTimeout(() => {
+      right.classList.remove('opacity-0');
+      right.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
+    }, 1000);
+    setTimeout(() => {
+      left.classList.remove('opacity-0');
+      left.classList.add('animate-[slideLeft_linear_0.4s_1_0s]');
+    }, 1400);
+    setTimeout(() => {
+      btns.classList.remove('opacity-0');
+      btns.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
+    }, 1800);
   }, []);
 
   return (
