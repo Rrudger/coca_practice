@@ -42,6 +42,7 @@ export default function Screen2({ animation }: { animation: boolean }) {
 
   return (
     <div
+      id='screen2'
       className={`
       w-screen h-screen flex justify-center items-stretch
       bg-neutral-100 md:text-large text-medium text-neutral-60 text-start

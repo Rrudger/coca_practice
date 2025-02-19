@@ -1,9 +1,13 @@
 import Image from 'next/image';
 
-export default function Screen4({ animation }: { animation: boolean }) {
-  const launchAnimation = () => {
+export default function Screen4({ animation1, animation2 }: { animation1: boolean, animation2: boolean }) {
+  const launchAnimation1 = () => {
+    const image = document.getElementById('s4image')!;
+    image.classList.remove('opacity-0');
+    image.classList.add('animate-[slideDown_linear_0.3s_1_0s]');
+  };
+  const launchAnimation2 = () => {
     const [
-      image,
       header,
       text,
       logosHeader,
@@ -17,7 +21,6 @@ export default function Screen4({ animation }: { animation: boolean }) {
       logo7,
       logo8
     ] = [
-      document.getElementById('s4image')!,
       document.getElementById('s4header')!,
       document.getElementById('s4text')!,
       document.getElementById('s4logosHeader')!,
@@ -31,62 +34,59 @@ export default function Screen4({ animation }: { animation: boolean }) {
       document.getElementById('walmartLogo')!,
       document.getElementById('oyoLogo')!,
     ];
-    image.classList.remove('opacity-0');
-    image.classList.add('animate-[slideDownHalf_linear_0.3s_1_0s]');
-    setTimeout(() => {
-      header.classList.remove('opacity-0');
-      header.classList.add('animate-[slideUp_linear_0.3s_1_0s]');
-    }, 300);
+    header.classList.remove('opacity-0');
+    header.classList.add('animate-[slideUp_linear_0.3s_1_0s]');
     setTimeout(() => {
       text.classList.remove('opacity-0');
       text.classList.add('animate-[slideUp_linear_0.3s_1_0s]');
-    }, 600);
+    }, 300);
     setTimeout(() => {
       logosHeader.classList.remove('opacity-0');
       logosHeader.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 900);
+    }, 600);
     setTimeout(() => {
       logo1.classList.remove('opacity-0');
       logo1.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1000);
+    }, 700);
     setTimeout(() => {
       logo2.classList.remove('opacity-0');
       logo2.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1100);
+    }, 800);
     setTimeout(() => {
       logo3.classList.remove('opacity-0');
       logo3.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1200);
+    }, 900);
     setTimeout(() => {
       logo4.classList.remove('opacity-0');
       logo4.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1300);
+    }, 1000);
     setTimeout(() => {
       logo8.classList.remove('opacity-0');
       logo8.classList.add('animate-[slideLeft_linear_0.1s_1_0s]');
-    }, 1400);
+    }, 1100);
     setTimeout(() => {
       logo7.classList.remove('opacity-0');
       logo7.classList.add('animate-[slideLeft_linear_0.1s_1_0s]');
-    }, 1500);
+    }, 1200);
     setTimeout(() => {
       logo6.classList.remove('opacity-0');
       logo6.classList.add('animate-[slideLeft_linear_0.1s_1_0s]');
-    }, 1600);
+    }, 1300);
     setTimeout(() => {
       logo5.classList.remove('opacity-0');
       logo5.classList.add('animate-[slidLeft_linear_0.1s_1_0s]');
-    }, 1700);
+    }, 1400);
     setTimeout(() => {
       logosText.classList.remove('opacity-0');
       logosText.classList.add('animate-[slideLeft_linear_0.1s_1_0s]');
-    }, 1800);
+    }, 1500);
 
   };
-  if (animation) launchAnimation();
+  if (animation1) launchAnimation1();
+  if (animation2) launchAnimation2();
 
   return (
-    <div className='w-screen flex justify-center items-stretch'>
+    <div id='screen4' className='w-screen flex justify-center items-stretch'>
       <div className='max-w-7xl w-full md:px-0 px-6'>
         <Image
           id='s4image'

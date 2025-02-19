@@ -6,22 +6,14 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/24/solid';
 
-export default function Screen5({ animation }: { animation: boolean }) {
-  const launchAnimation = () => {
+export default function Screen5({ animation1, animation2 }: { animation1: boolean, animation2: boolean }) {
+  const launchAnimation1 = () => {
     const [
       header,
       text,
-      div1,
-      div2,
-      div3,
-      div4
     ] = [
       document.getElementById('s5header')!,
       document.getElementById('s5text')!,
-      document.getElementById('s5div1')!,
-      document.getElementById('s5div2')!,
-      document.getElementById('s5div3')!,
-      document.getElementById('s5div4')!,
     ];
     header.classList.remove('opacity-0');
     header.classList.add('animate-[slideDownSl_linear_0.3s_1_0s]');
@@ -29,29 +21,41 @@ export default function Screen5({ animation }: { animation: boolean }) {
       text.classList.remove('opacity-0');
       text.classList.add('animate-[slideUp_linear_0.3s_1_0s]');
     }, 300);
-    setTimeout(() => {
-      div1.classList.remove('opacity-0');
-      div1.classList.add('animate-[slideRight_linear_0.3s_1_0s]');
-    }, 600);
+  };
+  const launchAnimation2 = () => {
+    const [
+      div1,
+      div2,
+      div3,
+      div4
+    ] = [
+      document.getElementById('s5div1')!,
+      document.getElementById('s5div2')!,
+      document.getElementById('s5div3')!,
+      document.getElementById('s5div4')!,
+    ];
+    div1.classList.remove('opacity-0');
+    div1.classList.add('animate-[slideRight_linear_0.3s_1_0s]');
     setTimeout(() => {
       div2.classList.remove('opacity-0');
       div2.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
-    }, 900);
+    }, 300);
     setTimeout(() => {
       div3.classList.remove('opacity-0');
       div3.classList.add('animate-[slideRight_linear_0.3s_1_0s]');
-    }, 1200);
+    }, 600);
     setTimeout(() => {
       div4.classList.remove('opacity-0');
       div4.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
-    }, 1500);
+    }, 900);
   };
-  if (animation) launchAnimation();
+  if (animation1) launchAnimation1();
+  if (animation2) launchAnimation2();
 
   return (
     <div className='w-screen flex justify-center items-stretch'>
       <div className='max-w-7xl w-full md:px-0 px-6'>
-        <div className='md:w-1/2 w-full md:mb-12 mb-6'>
+        <div id='screen5' className='md:w-1/2 w-full md:mb-12 mb-6'>
           <h2 id='s5header' className='opacity-0 md:text-h2_5 text-h5 font-semibold md:my-12 my-4'>
             Advertise, analyze, and optimize! We do it all for you
           </h2>
@@ -60,7 +64,7 @@ export default function Screen5({ animation }: { animation: boolean }) {
           </p>
         </div>
 
-        <div className='grid md:grid-cols-2 grid-cols-1 md:gap-y-12 gap-y-4 md:my-8 my-4'>
+        <div id='screen5cards' className='grid md:grid-cols-2 grid-cols-1 md:gap-y-12 gap-y-4 md:my-8 my-4'>
           <div id='s5div1' className='opacity-0 flex cursor-pointer'>
             <div className='relative md:w-[240px] w-[160px] md:h-[273px] h-[216px]'>
               <Image

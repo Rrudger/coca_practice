@@ -25,7 +25,7 @@ export default function Screen7({ animation }: { animation: boolean }) {
   if (animation) launchAnimation();
 
   return (
-    <div className='w-screen md:h-screen flex justify-center items-center'>
+    <div id='screen7' className='w-screen md:h-screen flex justify-center items-center'>
       <div className='max-w-7xl w-full md:px-0 px-6'>
         <div className='flex md:flex-row flex-col md:w-full w-3/4 md:mb-20 mb-6'>
           <h2 id='s7header' className='opacity-0 md:text-h2_5 text-h5 font-semibold md:mb-0 mb-4'>

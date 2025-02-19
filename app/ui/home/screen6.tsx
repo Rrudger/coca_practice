@@ -25,9 +25,8 @@ export default function Screen6({ animation }: { animation: boolean }) {
   if (animation) launchAnimation();
 
   return (
-    <div className='w-screen md:h-screen flex justify-center items-center'>
+    <div id='screen6' className='w-screen md:h-screen flex justify-center items-center'>
       <div className='max-w-7xl w-full md:px-0 px-6'>
-
         <div className='text-center md:mt-20 mt-8 md:mb-12 mb-8'>
           <h2 id='s6header' className='opacity-0 md:text-h2_5 text-h5 font-semibold md:mb-8 mb-4'>
             Trending news from Coca

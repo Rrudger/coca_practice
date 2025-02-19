@@ -3,17 +3,13 @@ import {
   CheckCircleIcon,
  } from '@heroicons/react/24/outline';
 
-export default function Screen3({ animation }: { animation: boolean }) {
-  const launchAnimation = () => {
-    const [image, header, text, list, stat1, stat2, stat3, stat4] = [
+export default function Screen3({ animation1, animation2 }: { animation1: boolean, animation2: boolean }) {
+  const launchAnimation1 = () => {
+    const [image, header, text, list] = [
       document.getElementById('s3image')!,
       document.getElementById('s3header')!,
       document.getElementById('s3text')!,
       document.getElementById('s3list')!,
-      document.getElementById('s3stat1')!,
-      document.getElementById('s3stat2')!,
-      document.getElementById('s3stat3')!,
-      document.getElementById('s3stat4')!,
     ];
     image.classList.remove('opacity-0');
     image.classList.add('animate-[slideRight_linear_0.3s_1_0s]');
@@ -29,27 +25,34 @@ export default function Screen3({ animation }: { animation: boolean }) {
       header.classList.remove('opacity-0');
       header.classList.add('animate-[slideLeft_linear_0.3s_1_0s]');
     }, 900);
-    setTimeout(() => {
-      stat1.classList.remove('opacity-0');
-      stat1.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1200);
+  };
+  const launchAnimation2 = () => {
+    const [stat1, stat2, stat3, stat4] = [
+      document.getElementById('s3stat1')!,
+      document.getElementById('s3stat2')!,
+      document.getElementById('s3stat3')!,
+      document.getElementById('s3stat4')!,
+    ];
+    stat1.classList.remove('opacity-0');
+    stat1.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
     setTimeout(() => {
       stat2.classList.remove('opacity-0');
       stat2.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1300);
+    }, 100);
     setTimeout(() => {
       stat3.classList.remove('opacity-0');
       stat3.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1400);
+    }, 200);
     setTimeout(() => {
       stat4.classList.remove('opacity-0');
       stat4.classList.add('animate-[slideRight_linear_0.1s_1_0s]');
-    }, 1500);
+    }, 300);
   };
-  if (animation) launchAnimation();
+  if (animation1) launchAnimation1();
+  if (animation2) launchAnimation2();
 
   return (
-    <div className='w-screen flex justify-center items-stretch'>
+    <div id='screen3' className='w-screen flex justify-center items-stretch'>
       <div className={`
         max-w-7xl w-full md:pt-24 pt-12 md:mx-0 mx-6
         grid md:grid-cols-2 grid-cols-1 gap-x-12 md:gap-y-0 gap-y-4
@@ -102,7 +105,7 @@ export default function Screen3({ animation }: { animation: boolean }) {
           </div>
         </div>
 
-        <div className={`
+        <div id='screen3stat' className={`
           md:col-span-2 col-span-1
           flex md:flex-row flex-col gap-x-8 gap-y-4 md:mb-12 mb-8 md:mt-20 mt-0
           text-neutral-100

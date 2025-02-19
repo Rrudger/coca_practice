@@ -38,7 +38,7 @@ export default function Header() {
       `}>
       <Link id='logo' href={'/'} className='opacity-0'>
         <Image
-          className='md:w-[140px] w-[112px] md:h-[66px] h-[42px]'
+          className='md:w-[140px] w-[112px] md:h-[66px] h-[52px]'
           src="/logo.png"
           width={140}
           height={66}
