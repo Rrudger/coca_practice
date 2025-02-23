@@ -20,10 +20,10 @@ export default function CarouselReviews() {
   };
 
   return (
-    <div id='s7carousel' className='opacity-0 flex flex-col'>
+    <div id='s7carousel' className='md:opacity-0 flex flex-col'>
       <Image
         className='md:h-[77px] h-[22px] md:w-[115px] w-[32px]'
-        src="/screen6/quotes.png"
+        src="/home6/quotes.png"
         width='115'
         height='77'
         alt="quotes"

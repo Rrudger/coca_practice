@@ -23,7 +23,7 @@ export default function CarouselBlog() {
   };
 
   return (
-    <div id='s6carousel' className='relative opacity-0'>
+    <div id='s6carousel' className='relative md:opacity-0'>
 
       <div id='carouselBlog' className='grid grid-cols-2 gap-x-8 overflow-hidden'>
         {blogPosts.map((post, index) => {
@@ -76,7 +76,7 @@ export default function CarouselBlog() {
         `}>
           <Image
             onClick={handlePrev}
-            className='md:h-[40px] h-[12px] md:w-[24px] w-[8px] cursor-pointer'
+            className='md:h-[40px] h-[12px] md:w-[24px] w-[8px] cursor-pointer hover:scale-110'
             src="/icons/chevronLeft.svg"
             width='24'
             height='40'
@@ -84,7 +84,7 @@ export default function CarouselBlog() {
           />
           <Image
             onClick={handleNext}
-            className='md:h-[40px] h-[12px] md:w-[24px] w-[8px] cursor-pointer'
+            className='md:h-[40px] h-[12px] md:w-[24px] w-[8px] cursor-pointer hover:scale-110'
             src="/icons/chevronRight.svg"
             width='24'
             height='40'

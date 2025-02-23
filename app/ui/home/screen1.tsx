@@ -19,15 +19,15 @@ export default function Screen1() {
       document.getElementById('screen1-btns')!
     ];
     setTimeout(() => {
-      right.classList.remove('opacity-0');
+      right.classList.remove('md:opacity-0');
       right.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
     }, 1000);
     setTimeout(() => {
-      left.classList.remove('opacity-0');
+      left.classList.remove('md:opacity-0');
       left.classList.add('animate-[slideLeft_linear_0.4s_1_0s]');
     }, 1400);
     setTimeout(() => {
-      btns.classList.remove('opacity-0');
+      btns.classList.remove('md:opacity-0');
       btns.classList.add('animate-[slideRight_linear_0.4s_1_0s]');
     }, 1800);
   }, []);
@@ -36,7 +36,7 @@ export default function Screen1() {
     <div style={style} className='w-screen h-screen flex justify-center items-stretch'>
       <div className='max-w-7xl grid md:grid-cols-10 grid-cols-1 md:pt-[200px] pt-[150px] md:px-0 px-6'>
         <div className='md:col-span-6 flex flex-col md:justify-between justify-center'>
-          <div id='screen1-l' className='opacity-0'>
+          <div id='screen1-l' className='md:opacity-0'>
             <div className={`
               md:text-h1 text-h4 font-bold text-nowrap
               md:mt-12 mt-0 md:mb-20 mb-8
@@ -53,7 +53,7 @@ export default function Screen1() {
           </div>
           <form
             id='screen1-btns'
-            className='flex flex-row md:mt-0 mt-8 md:mb-12 mb-4 opacity-0'
+            className='flex flex-row md:mt-0 mt-8 md:mb-12 mb-4 md:opacity-0'
             action={tryFree}>
             <input
               id="email"
@@ -67,10 +67,10 @@ export default function Screen1() {
             </button>
           </form>
         </div>
-      <div id='screen1-r' className='md:col-span-4 flex flex-col opacity-0'>
+      <div id='screen1-r' className='md:col-span-4 flex flex-col md:opacity-0'>
         <Image
             className='md:my-12 my-4'
-            src="/Sales-Graph.png"
+            src="/home1/Sales-Graph.png"
             width={550}
             height={500}
             alt="sales graph"

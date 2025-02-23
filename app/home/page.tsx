@@ -44,15 +44,17 @@ export default function Page() {
       document.getElementById("screen6")!,
       document.getElementById("screen7")!
     ];
-    if (top > screen2.offsetTop - halfVP) set2(true);
-    if (top > screen3.offsetTop - halfVP) set3(true);
-    if (top > screen3stat.offsetTop - halfVP * 2) set3stat(true);
-    if (top > screen4image.offsetTop - halfVP) set4image(true);
-    if (top > screen4text.offsetTop - halfVP) set4text(true);
-    if (top > screen5.offsetTop - halfVP) set5(true);
-    if (top > screen5cards.offsetTop - halfVP) set5cards(true);
-    if (top > screen6.offsetTop - halfVP) set6(true);
-    if (top > screen7.offsetTop - halfVP) set7(true);
+    if (screen2) {
+      if (top > screen2.offsetTop - halfVP) set2(true);
+      if (top > screen3.offsetTop - halfVP) set3(true);
+      if (top > screen3stat.offsetTop - halfVP * 2) set3stat(true);
+      if (top > screen4image.offsetTop - halfVP) set4image(true);
+      if (top > screen4text.offsetTop - halfVP) set4text(true);
+      if (top > screen5.offsetTop - halfVP) set5(true);
+      if (top > screen5cards.offsetTop - halfVP) set5cards(true);
+      if (top > screen6.offsetTop - halfVP) set6(true);
+      if (top > screen7.offsetTop - halfVP) set7(true);
+    }
   };
   useEffect(() => {
     document.addEventListener(('scroll'), handleScroll);

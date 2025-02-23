@@ -1,3 +1,5 @@
+'use client';
+
 import '@/app/ui/globals.css';
 import { inter } from '@/app/ui/fonts';
 import Header from '@/app/ui/header';

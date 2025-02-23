@@ -49,26 +49,26 @@ export default function Footer() {
         document.getElementById('fLogos')!,
         document.getElementById('fCopyright')!,
       ];
-      header.classList.remove('opacity-0');
+      header.classList.remove('md:opacity-0');
       header.classList.add('animate-[slideRight_linear_0.3s_1_0s]');
       setTimeout(() => {
-        line1.classList.remove('opacity-0');
+        line1.classList.remove('md:opacity-0');
         line1.classList.add('animate-[slideRight_linear_0.2s_1_0s]');
       }, 300);
       setTimeout(() => {
-        text1.classList.remove('opacity-0');
+        text1.classList.remove('md:opacity-0');
         text1.classList.add('animate-[slideRight_linear_0.2s_1_0s]');
       }, 500);
       setTimeout(() => {
-        btn.classList.remove('opacity-0');
+        btn.classList.remove('md:opacity-0');
         btn.classList.add('animate-[slideRight_linear_0.2s_1_0s]');
       }, 700);
       setTimeout(() => {
-        logo.classList.remove('opacity-0');
+        logo.classList.remove('md:opacity-0');
         logo.classList.add('animate-[slideUp_linear_0.2s_1_0s]');
       }, 900);
       setTimeout(() => {
-        text2.classList.remove('opacity-0');
+        text2.classList.remove('md:opacity-0');
         text2.classList.add('animate-[slideUp_linear_0.2s_1_0s]');
       }, 1100);
       menu.forEach((col, index) => {
@@ -77,21 +77,21 @@ export default function Footer() {
           const link = document.getElementById(`f${row}`)!;
           console.log(delay + index * 100)
           setTimeout(() => {
-            link.classList.remove('opacity-0');
+            link.classList.remove('md:opacity-0');
             link.classList.add('animate-[slideUp_linear_0.1s_1_0s]');
           }, delay + index * 100);
         })
       });
       setTimeout(() => {
-        line2.classList.remove('opacity-0');
+        line2.classList.remove('md:opacity-0');
         line2.classList.add('animate-[slideUp_linear_0.1s_1_0s]');
       }, 3300);
       setTimeout(() => {
-        logos.classList.remove('opacity-0');
+        logos.classList.remove('md:opacity-0');
         logos.classList.add('animate-[slideUp_linear_0.1s_1_0s]');
       }, 3400);
       setTimeout(() => {
-        copyright.classList.remove('opacity-0');
+        copyright.classList.remove('md:opacity-0');
         copyright.classList.add('animate-[slideUp_linear_0.1s_1_0s]');
       }, 3500);
     };
@@ -119,18 +119,18 @@ export default function Footer() {
       )}>
         <div className='md:flex md:flex-row justify-between items-center md:mb-0 mb-8'>
           <div className='md:mb-12'>
-            <h1 id='fHeader' className='opacity-0 md:text-h1_5 text-h5 font-semibold'>
+            <h1 id='fHeader' className='md:opacity-0 md:text-h1_5 text-h5 font-semibold'>
               Think beyond the wave
             </h1>
             <div className='grid grid-cols-6 md:my-16 my-8 md:w-2/3'>
               <hr id='fLine1' className={clsx(
-                'opacity-0 col-span-1 translate-y-[20px] md:mr-8 mr-4',
+                'md:opacity-0 col-span-1 translate-y-[20px] md:mr-8 mr-4',
                 {
                   'border-neutral-100': !dark,
                   'border-neutral-10': dark,
                 },
               )}/>
-              <div id='fText' className='opacity-0 col-span-5 md:text-h5 text-large font-semibold'>
+              <div id='fText' className='md:opacity-0 col-span-5 md:text-h5 text-large font-semibold'>
                 Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function Footer() {
             <div className='md:hidden col-span-1'></div>
             <div className='md:col-span-6 col-span-5'>
             <button id='fBtn' className={clsx(
-              'opacity-0 md:mr-0 mr-4 text-nowrap md:text-large text-medium font-bold rounded-full md:py-4 py-[12px] md:px-12 px-8',
+              'md:opacity-0 md:mr-0 mr-4 text-nowrap md:text-large text-medium font-bold rounded-full md:py-4 py-[12px] md:px-12 px-8',
               {
                 'bg-neutral-100 text-neutral-10': !dark,
                 'bg-neutral-10 text-neutral-100': dark,
@@ -155,14 +155,14 @@ export default function Footer() {
           <div className='md:col-span-3 col-span-12 md:my-0 my-8'>
             <Image
               id='fLogo'
-              className='opacity-0 md:w-[140px] w-[95px] md:h-[66px] h-[44px] md:mb-0 mb-4'
+              className='md:opacity-0 md:w-[140px] w-[95px] md:h-[66px] h-[44px] md:mb-0 mb-4'
               src={dark ? '/logoLight.png' : "/logo.png"}
               width={140}
               height={66}
               alt="logo Coca"
             />
             <div id='fText2' className={clsx(
-              'opacity-0 md:text-largeplus text-large font-medium md:w-auto w-3/4',
+              'md:opacity-0 md:text-largeplus text-large font-medium md:w-auto w-3/4',
               {
                 'md:text-neutral-100 text-neutral-60': !dark,
                 'text-neutral-60': dark,
@@ -181,7 +181,7 @@ export default function Footer() {
                   key={index}
                   id={`f${link}`}
                   href={`/${link.split(' ').join('').toLowerCase()}`}
-                  className={index === 0 ? 'opacity-0 font-bold' : 'opacity-0'}>
+                  className={index === 0 ? 'md:opacity-0 font-bold' : 'md:opacity-0'}>
                   {link}
                 </Link>
                 )}
@@ -192,13 +192,13 @@ export default function Footer() {
 
         <div className='text-center text-neutral-60 md:text-large text-medium'>
           <hr id='fLine2' className={clsx(
-            'opacity-0 md:my-16',
+            'md:opacity-0 md:my-16',
             {
               'bg-neutral-40': !dark,
               'bg-neutral-70': dark,
             },
           )}/>
-          <div id='fLogos' className='opacity-0 md:hidden flex flex-row justify-center my-6 gap-x-4'>
+          <div id='fLogos' className='md:opacity-0 md:hidden flex flex-row justify-center my-6 gap-x-4'>
             {icons.map((name) => <Image
               key={name}
               className={dark ? 'invert cursor-pointer' : 'cursor-pointer'}
@@ -209,7 +209,7 @@ export default function Footer() {
                />)}
           </div>
 
-          <div id='fCopyright' className='opacity-0'>
+          <div id='fCopyright' className='md:opacity-0'>
             <div className='md:hidden text-[14px] leading-[24px] flex flex-row justify-between my-6'>
               <p className='cursor-pointer'>Privacy Policy</p>
               <p className='cursor-pointer'>Terms & Conditions</p>

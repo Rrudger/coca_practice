@@ -140,15 +140,15 @@ export default {
           '75%': { transform: 'translateX(15%)', opacity: '0.75'},
           '100%': { transform: 'translateX(0)', opacity: '1'},
         },
+        rotate: {
+          '0%': { transform: 'rotate(180deg)' },
+          '25%': { transform: 'rotate(120deg)' },
+          '50%': { transform: 'rotate(90deg)' },
+          '75%': { transform: 'rotate(60deg)' },
+          '100%': { transform: 'rotate(30deg)' },
+        },
       },
-      animation: {
-        'slide-in-menu': 'slideInMenu 0.3s linear',
-        'slide-out-menu': 'slideOutMenu 0.3s linear',
-        'slide-right': 'slideRight 0.5s linear',
-        'slide-left': 'slideLeft 0.5s linear',
-        'slide-up': 'slideUp 0.5s linear',
-        'slide-down': 'slideDown 0.5s linear',
-      }
+
     },
   },
   plugins: [],
