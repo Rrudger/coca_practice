@@ -41,4 +41,42 @@ export const reviews = [
     rating: 3.5,
     text: 'With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website'
   },
-]
+];
+
+export const team = [
+  {
+    name: 'Arlyne Stefano',
+    position: 'Founder & CEO',
+    photo: '/about2/arlyne_stefano.png',
+  },
+  {
+    name: 'Katy Cristy',
+    position: 'Chief Technology Officer',
+    photo: '/about2/katy_cristy.png',
+  },
+  {
+    name: 'Roger Dzawin',
+    position: 'Chief Technology Officer',
+    photo: '/about2/roger_dzawin.png',
+  },
+  {
+    name: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
+    photo: '/about2/ryn_marlow.jpg',
+  },
+  {
+    name: 'Nora Vale',
+    position: 'Chief Technology Officer',
+    photo: '/about2/nora_vale.png',
+  },
+  {
+    name: 'Lunivara Sylthane',
+    position: 'Chief Technology Officer',
+    photo: '/about2/lunivara_sylthane.png',
+  },
+  {
+    name: 'Jack Blythe',
+    position: 'Chief Technology Officer',
+    photo: '/about2/jack_blythe.png',
+  },
+];

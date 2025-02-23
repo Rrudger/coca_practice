@@ -4,8 +4,8 @@ import CarouselTeam from '@/app/ui/about/carouselTeam';
 export default function Screen3({ animation }: { animation: boolean }) {
   console.log(animation);
   return (
-    <div id='about3' className='w-screen md:h-screen flex justify-center items-between'>
-      <div className='max-w-7xl md:px-0 px-6 md:my-0 my-8'>
+    <div id='about3' className='w-screen flex justify-center items-between'>
+      <div className='max-w-7xl md:px-0 px-6 md:mb-24 my-8'>
 
         <div className='md:w-2/3 md:my-16 my-8'>
           <h2 className='md:text-h2_5 text-h5 font-semibold md:mb-8 mb-6'>
