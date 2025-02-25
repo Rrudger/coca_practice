@@ -2,14 +2,19 @@
 
 import Image from 'next/image';
 
-export default function TeamCard({ person }: { person: { name: string, position: string, photo: string }}) {
+export default function TeamCard(
+  { person, id, visible }: {
+    person: { name: string, position: string, photo: string },
+    id: string,
+    visible: boolean,
+  }) {
   return (
-    <div>
+    <div id={id} className={visible ? 'md:opacity-0' : 'md:opacity-0 md:block hidden'}>
       <Image
-        className='w-full'
+        className='md:w-full md:h-[450px] min-w-[250px] h-[250px] shrink-0 object-cover object-top'
         src={person.photo}
         width={380}
-        height={430}
+        height={550}
         alt={`${person.name} photo`}
       />
 

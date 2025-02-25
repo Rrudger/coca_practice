@@ -67,16 +67,16 @@ export const team = [
   {
     name: 'Nora Vale',
     position: 'Chief Technology Officer',
-    photo: '/about2/nora_vale.png',
+    photo: '/about2/nora_vale.jpg',
   },
   {
     name: 'Lunivara Sylthane',
     position: 'Chief Technology Officer',
-    photo: '/about2/lunivara_sylthane.png',
+    photo: '/about2/lunivara_sylthane.jpg',
   },
   {
     name: 'Jack Blythe',
     position: 'Chief Technology Officer',
-    photo: '/about2/jack_blythe.png',
+    photo: '/about2/jack_blythe.jpg',
   },
 ];
