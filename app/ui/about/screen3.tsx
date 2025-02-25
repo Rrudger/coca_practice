@@ -45,6 +45,11 @@ export default function Screen3({ animation }: { animation: boolean }) {
       link.classList.remove('md:opacity-0');
       link.classList.add('animate-[slideDown_linear_0.4s_1_0s]');
     }, 2400);
+    setTimeout(() => {
+      image1.classList.remove('animate-[slideRight_linear_0.4s_1_0s]');
+      image2.classList.remove('animate-[slideRight_linear_0.4s_1_0s]');
+      image3.classList.remove('animate-[slideRight_linear_0.4s_1_0s]');
+    }, 2800);
   };
   if(animation) launchAnimation();
 

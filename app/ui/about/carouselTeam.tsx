@@ -10,9 +10,9 @@ export default function CarouselTeam() {
 
   const handleNext = () => {
     const [card0, card1, card2] = [
-      document.getElementById('a2card0')!,
-      document.getElementById('a2card1')!,
-      document.getElementById('a2card2')!,
+      document.getElementById('a3card0')!,
+      document.getElementById('a3card1')!,
+      document.getElementById('a3card2')!,
     ];
     card0.classList.add('animate-[fadeIn_linear_0.4s_1_0s]');
     card0.classList.add('opacity-0');
