@@ -80,3 +80,61 @@ export const team = [
     photo: '/about2/jack_blythe.jpg',
   },
 ];
+
+export const plans = [
+  {
+    name: 'Starter',
+    text: 'Affordable plan for beginners to kickstart their journey!',
+    icon: 'heart.svg',
+    price: 100,
+    features: [0,1,2,3]
+  },
+  {
+    name: 'Popular',
+    text: 'Get great value with our top-tier option for unbeatable features!',
+    icon: 'bolt.svg',
+    price: 200,
+    features: [0,1,2,3,5]
+  },
+  {
+    name: 'Enterprise',
+    text: 'Unlock premium features tailored for large-scale business needs!',
+    icon: 'gem.svg',
+    price: 300,
+    features: [0,1,2,4,3,5,6,7]
+  },
+];
+
+export const plansFeatures = [
+  'Unlimited Upload',
+  'Advanced Statistic',
+  'Profile Badge',
+  'Access to the community',
+  'History of all Liked Photos',
+  'Directory Listing',
+  'Customize Your Profile',
+  'Display Your Workshops',
+];
+
+export const faq = [
+  {
+    question: 'Is there a free trial available?',
+    answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
+  },
+  {
+    question: 'How Can I Add More Emails To My Account?',
+    answer: 'To add more emails to your account, go to the account settings, find the "Add Email" section, enter the new email address, verify it, and save your changes.',
+  },
+  {
+    question: 'Can I Change Plans Or Cancel My Subscription At Any Time?',
+    answer: 'Yes, you can usually change plans or cancel your subscription at any time. Check the specific terms of service for any potential fees or notice periods that may apply.',
+  },
+  {
+    question: 'How Secure Is My Date With Sans CRM?',
+    answer: 'Your date with Sans CRM is secure, utilizing robust encryption and data protection measures, ensuring your information remains private and safe throughout the experience.',
+  },
+  {
+    question: 'What Is The Uptime Guarantee?',
+    answer: 'An uptime guarantee assures customers that a service will be operational and accessible for a specified percentage of time, often around 99.9%, excluding scheduled maintenance.',
+  }
+]

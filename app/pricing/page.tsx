@@ -1,7 +1,12 @@
+'use client';
+ 
+import Screen1 from '@/app/ui/pricing/screen1';
+
 export default function Page() {
+
   return (
-    <div className='h-screen'>
-      pricing
+    <div className=''>
+      <Screen1 />
     </div>
   );
 };
