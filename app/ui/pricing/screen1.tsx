@@ -5,7 +5,6 @@ import {
   MinusIcon,
   PlusIcon,
  } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
 import PricePlanCard from '@/app/ui/pricing/pricePlanCard';
 import { faq, plans } from '@/app/lib/data';
 
@@ -21,12 +20,21 @@ export default function Screen1() {
   const handleSwitchDuration = () => setAnnual(!annual);
   const [openedQuestion, setOpened] = useState<number>(0);
   const handleSetOpened = (index: number) => () => {
+    const prevAnswer =  document.getElementById(`${openedQuestion - 1}answer`)!;
+    const newAnswer =  document.getElementById(`${index}answer`)!;
     if (openedQuestion === index + 1) {
+      prevAnswer.classList.add('hidden');
       setOpened(0);
     } else {
+      if (prevAnswer) prevAnswer.classList.add('hidden');
+      newAnswer.classList.remove('hidden');
+      newAnswer.classList.add('animate-[openDown_linear_0.4s_1_0s]');
+      setTimeout(() => {
+        newAnswer.classList.remove('animate-[closeUp_linear_0.4s_1_0s]');
+      }, 400);
       setOpened(index + 1);
     }
-  }
+  };
 
   return (
     <div  style={style} className='w-screen flex justify-center items-between'>
@@ -92,7 +100,7 @@ export default function Screen1() {
                 className='md:py-8 py-6'
               >
                 <div className='flex flex-row justify-between items-center'>
-                  <h5 className='md:text-h5 text-large font-semibold'>
+                  <h5 className='relative z-50 md:text-h5 text-large font-semibold'>
                     {question.question}
                   </h5>
                   <div
@@ -101,12 +109,10 @@ export default function Screen1() {
                     {active ? <MinusIcon /> : <PlusIcon />}
                   </div>
                 </div>
-                <p className={clsx(
-                  'md:text-extralarge text-medium text-neutral-60 font-medium md:mt-8 mt-4 md:w-1/2',
-                  {
-                    'hidden': !active,
-                  },
-                )}>
+                <p
+                  id={`${index}answer`}
+                  className='hidden md:text-extralarge text-medium text-neutral-60 font-medium md:mt-8 mt-4 md:w-1/2'
+                  >
                   {question.answer}
                 </p>
               </div>

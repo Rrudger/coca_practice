@@ -1,7 +1,9 @@
+import Screen1 from '@/app/ui/contact/screen1';
+
 export default function Page() {
   return (
-    <div className='h-screen'>
-      contacts
+    <div className=''>
+      <Screen1 />
     </div>
   );
 };
