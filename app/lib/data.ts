@@ -147,6 +147,8 @@ export const posts = [
     id: '0',
     photo: '/blog/image0.jpg',
     date: "2025-03-01",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "The Future of AI in IT",
     description: "AI is revolutionizing the IT industry by improving efficiency and automation.",
     section: 'design'
@@ -155,6 +157,8 @@ export const posts = [
     id: '1',
     photo: '/blog/image0.jpg',
     date: "2025-03-02",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "Cybersecurity Trends in 2025",
     description: "Discover the latest trends in cybersecurity and how to stay protected.",
     section: 'design'
@@ -163,6 +167,8 @@ export const posts = [
     id: '2',
     photo: '/blog/image0.jpg',
     date: "2025-03-03",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "Cloud Computing Benefits",
     description: "Why cloud computing is a game-changer for modern IT infrastructure.",
     section: 'design'
@@ -171,6 +177,8 @@ export const posts = [
     id: '3',
     photo: '/blog/image0.jpg',
     date: "2025-03-04",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "5G's Impact on IT Networks",
     description: "How 5G will enhance connectivity and change the way networks function.",
     section: 'design'
@@ -179,6 +187,8 @@ export const posts = [
     id: '4',
     photo: '/blog/image0.jpg',
     date: "2025-03-05",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "DevOps: Bridging the Gap",
     description: "DevOps is transforming IT operations and development teams for the better.",
     section: 'articles'
@@ -187,6 +197,8 @@ export const posts = [
     id: '5',
     photo: '/blog/image0.jpg',
     date: "2025-03-06",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "The Rise of Quantum Computing",
     description: "An introduction to quantum computing and its potential in IT systems.",
     section: 'articles'
@@ -195,6 +207,8 @@ export const posts = [
     id: '6',
     photo: '/blog/image0.jpg',
     date: "2025-03-07",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "Tech Talent Acquisition Tips",
     description: "How to attract and retain the best tech talent in today's competitive market.",
     section: 'articles'
@@ -203,6 +217,8 @@ export const posts = [
     id: '7',
     photo: '/blog/image0.jpg',
     date: "2025-03-08",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "Blockchain Beyond Cryptos",
     description: "Exploring the potential of blockchain technology in various industries.",
     section: 'articles'
@@ -211,6 +227,8 @@ export const posts = [
     id: '8',
     photo: '/blog/image0.jpg',
     date: "2025-03-09",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "Edge Computing Explained",
     description: "Why edge computing is becoming crucial for modern IT infrastructure.",
     section: 'articles'
@@ -219,6 +237,8 @@ export const posts = [
     id: '9',
     photo: '/blog/image0.jpg',
     date: "2025-03-10",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "IT Industry's Green Future",
     description: "Sustainable practices in IT that can reduce the industry's carbon footprint.",
     section: 'articles'
@@ -227,6 +247,8 @@ export const posts = [
     id: '10',
     photo: '/blog/image0.jpg',
     date: "2025-03-11",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "Automation in IT Support",
     description: "How automation is changing the way IT support teams operate.",
     section: 'product'
@@ -235,6 +257,8 @@ export const posts = [
     id: '11',
     photo: '/blog/image0.jpg',
     date: "2025-03-12",
+    author: 'Ryn Marlow',
+    position: 'Chief Technology Officer',
     title: "AI-Powered IT Management",
     description: "Leveraging AI for smarter IT management and decision-making.",
     section: 'product'
