@@ -37,9 +37,9 @@ export default function Screen1() {
     <div className='w-screen md:h-screen flex justify-center items-between'>
       <div className='max-w-7xl md:pt-[200px] pt-[150px] md:pb-20 pb-8 md:px-0 px-6 flex flex-col justify-around'>
 
-        <div id='a1header' className='opacity-0 md:text-[72px] text-h4 md:leading-[86.4px] font-bold md:w-2/3'>
+        <h1 id='a1header' className='opacity-0 md:text-[72px] text-h4 md:leading-[86.4px] font-bold md:w-2/3'>
           Everything you need to get the attention of your audience
-        </div>
+        </h1>
 
         <div className='flex md:flex-row flex-col justify-between items-center md:mt-0 mt-20'>
           <div className={`

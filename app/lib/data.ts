@@ -137,4 +137,113 @@ export const faq = [
     question: 'What Is The Uptime Guarantee?',
     answer: 'An uptime guarantee assures customers that a service will be operational and accessible for a specified percentage of time, often around 99.9%, excluding scheduled maintenance.',
   }
-]
+];
+
+export const menu = ['View all', 'Design', 'Articles', 'Product', 'Software Development', 'Customer Success'];
+
+
+export const posts = [
+  {
+    id: '0',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-01",
+    title: "The Future of AI in IT",
+    description: "AI is revolutionizing the IT industry by improving efficiency and automation.",
+    section: 'design'
+  },
+  {
+    id: '1',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-02",
+    title: "Cybersecurity Trends in 2025",
+    description: "Discover the latest trends in cybersecurity and how to stay protected.",
+    section: 'design'
+  },
+  {
+    id: '2',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-03",
+    title: "Cloud Computing Benefits",
+    description: "Why cloud computing is a game-changer for modern IT infrastructure.",
+    section: 'design'
+  },
+  {
+    id: '3',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-04",
+    title: "5G's Impact on IT Networks",
+    description: "How 5G will enhance connectivity and change the way networks function.",
+    section: 'design'
+  },
+  {
+    id: '4',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-05",
+    title: "DevOps: Bridging the Gap",
+    description: "DevOps is transforming IT operations and development teams for the better.",
+    section: 'articles'
+  },
+  {
+    id: '5',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-06",
+    title: "The Rise of Quantum Computing",
+    description: "An introduction to quantum computing and its potential in IT systems.",
+    section: 'articles'
+  },
+  {
+    id: '6',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-07",
+    title: "Tech Talent Acquisition Tips",
+    description: "How to attract and retain the best tech talent in today's competitive market.",
+    section: 'articles'
+  },
+  {
+    id: '7',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-08",
+    title: "Blockchain Beyond Cryptos",
+    description: "Exploring the potential of blockchain technology in various industries.",
+    section: 'articles'
+  },
+  {
+    id: '8',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-09",
+    title: "Edge Computing Explained",
+    description: "Why edge computing is becoming crucial for modern IT infrastructure.",
+    section: 'articles'
+  },
+  {
+    id: '9',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-10",
+    title: "IT Industry's Green Future",
+    description: "Sustainable practices in IT that can reduce the industry's carbon footprint.",
+    section: 'articles'
+  },
+  {
+    id: '10',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-11",
+    title: "Automation in IT Support",
+    description: "How automation is changing the way IT support teams operate.",
+    section: 'product'
+  },
+  {
+    id: '11',
+    photo: '/blog/image0.jpg',
+    date: "2025-03-12",
+    title: "AI-Powered IT Management",
+    description: "Leveraging AI for smarter IT management and decision-making.",
+    section: 'product'
+  }
+];
+
+export const countryCodes: Record<string, string> = {
+  'US': '1',
+  'DE': '49',
+  'IT': '39',
+  'FR': '33',
+};

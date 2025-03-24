@@ -8,7 +8,7 @@ import { team } from '@/app/lib/data';
 export default function CarouselTeam() {
   const [first, setFirst] = useState<number>(0);
 
-  const handleNext = () => {
+  const handlePrev = () => {
     const [card0, card1, card2] = [
       document.getElementById('a3card0')!,
       document.getElementById('a3card1')!,
@@ -46,7 +46,7 @@ export default function CarouselTeam() {
       card2.classList.remove('animate-[fadeOut_linear_0.4s_1_0s]');
     }, 2400);
   };
-  const handlePrev = () => {
+  const handleNext = () => {
     const [card0, card1, card2] = [
       document.getElementById('a3card0')!,
       document.getElementById('a3card1')!,

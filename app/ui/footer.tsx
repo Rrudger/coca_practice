@@ -75,7 +75,6 @@ export default function Footer() {
         const delay = 1300 + 500 * index;
         col.forEach((row, index) => {
           const link = document.getElementById(`f${row}`)!;
-          console.log(delay + index * 100)
           setTimeout(() => {
             link.classList.remove('md:opacity-0');
             link.classList.add('animate-[slideUp_linear_0.1s_1_0s]');
